@@ -1,1 +1,10 @@
 #!/bin/bash
+
+#add a user
+
+read -P "New Username: " NEW
+read -P "User ID: " UID
+
+mkdir /home/$NEW
+useradd -u $UID $NEW
+
